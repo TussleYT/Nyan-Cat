@@ -1,2 +1,2 @@
 # Nyan-Cat
-nyan cat lol
+My code for Nyan Cat please read the LICENSE to 
