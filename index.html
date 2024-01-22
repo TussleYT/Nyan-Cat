@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyan Cat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #nyan-cat-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #nyan-cat {
+            animation: nyanCatAnimation 10s linear infinite;
+        }
+
+        #title {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            transform: translateX(-50%);
+        }
+
+        @keyframes nyanCatAnimation {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <audio id="nyan-cat-audio" autoplay loop>
+        <source src="nyan-cat.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="nyan-cat-container">
+        <img id="nyan-cat" src="nyan-cat.gif" alt="Nyan Cat">
+    </div>
+    <div id="title">nyan cat lol</div>
+    <script src="script.js"></script>
+</body>
+</html>
